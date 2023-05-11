@@ -46,7 +46,7 @@ def main_loop(number_of_dice):
         percentages_array = np.round(
             np.copy(iterative_array) / 6**iteration * 100, 2
             )
-        print(iteration, "DICE: ", percentages_array)
+        print(iteration, "Dice: ", percentages_array)
         # Function call to add results of one additional base die to the combinations
         iterative_array = add_base_die(iterative_array)
         iteration = iteration + 1
