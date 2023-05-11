@@ -10,7 +10,7 @@ def add_base_die(input):
     temp_array = np.array(input_array) * 4
     # Dice result 5: Any input misses become weak hits, keep input weak hits
     temp_array[1] = temp_array[1] + input_array[0] + input_array[1]
-    # Result 5 cont: Keep input strong hist and crit hits unchanged
+    # Result 5 cont: Keep input strong hits and crit hits unchanged
     temp_array[2:4] = temp_array[2:4] + input_array[2:4]
     # Dice Result 6: Any input misses and weak hits become strong hits
     temp_array[2] = temp_array[2] + input_array[0] + input_array[1]
